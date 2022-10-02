@@ -1,0 +1,29 @@
+.user-icon {
+    width: 3vw;
+    height: 3vw;
+    background-color: brown;
+    border-radius: 50%;
+    color: white;
+    font-size: large;
+    border: 0;
+    margin-right: 1.3rem;
+}
+
+.card-cls {
+    background-color: white;
+    height: 10vh;
+    text-align: center;
+    border: 1px solid brown;
+}
+
+.card-title {
+    color: brown;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.view-more-cls {
+    color: brown;
+    font-weight: bold;
+    text-align: center;
+}

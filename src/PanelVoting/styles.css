@@ -1,0 +1,16 @@
+.panel-tool-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+}
+
+.data-grid-card {
+    margin: 2rem;
+}
+
+.data-grid-card-title {
+    margin-bottom: 1.5rem;
+    font-size: x-large;
+    font-weight: bold;
+}
