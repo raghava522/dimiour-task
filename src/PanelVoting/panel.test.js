@@ -1,21 +1,21 @@
 import Enzyme, { mount, shallow } from 'enzyme';
-import HPCConsole from '.';
 import Adapter from 'enzyme-adapter-react-16';
+import PanelVoting from '.';
 
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('Component TITLE', () => {
     it('Should have text', () => {
-        const hpConsole = shallow(<HPCConsole />)
+        const hpConsole = shallow(<PanelVoting />)
 
-        expect(hpConsole.find('button').text()).toContain('GK');
+        expect(hpConsole.find('#votingList').text()).toContain('Voting List');
     });
 });
 
 describe('Component TITLE', () => {
     it('Should have text', () => {
-        const hpConsole = shallow(<HPCConsole />)
+        const hpConsole = shallow(<PanelVoting />)
 
-        expect(hpConsole.find('.view-more-cls').text()).toContain('View More');
+        expect(hpConsole.find('#login-btn').text()).toContain('Login');
     });
 });

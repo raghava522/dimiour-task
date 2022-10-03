@@ -62,7 +62,7 @@ const PanelVoting = () => {
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                             Panel Voting App
                         </Typography>
-                        <Button variant="text" sx={{ color: 'white' }}>Login</Button>
+                        <Button variant="text" sx={{ color: 'white' }} id="login-btn">Login</Button>
                     </Toolbar>
                 </AppBar>
             </Box>
@@ -70,13 +70,14 @@ const PanelVoting = () => {
                 <Grid container>
                     <Grid item xs={5}>
                         <div className="data-grid-card">
-                            <div className="data-grid-card-title">Voting List</div>
+                            <div className="data-grid-card-title" id="votingList">Voting List</div>
                             <div style={{ height: 400, width: '100%' }}>
                                 <DataGrid
                                     rows={votingRows}
                                     columns={votingColumns}
                                     pageSize={5}
                                     rowsPerPageOptions={[5]}
+                                    id="datagrid"
                                 />
                             </div>
                         </div>
@@ -99,8 +100,8 @@ const PanelVoting = () => {
                         {/* <Fab color="primary" aria-label="add" variant="extended" sx={{ transform: 'rotate(90deg)' }}>
                             Feedback
                         </Fab> */}
-                        <Button variant="contained" sx={{ marginTop: '3rem', marginBottom: '1rem' }}>Conference Feedback</Button>
-                        <Button variant="contained" sx={{ marginTop: '1rem', marginBottom: '1rem' }}>Panel Suggestion</Button>
+                        <Button variant="contained" sx={{ marginTop: '3rem', marginBottom: '1rem' }} id="conference-btn">Conference Feedback</Button>
+                        <Button variant="contained" sx={{ marginTop: '1rem', marginBottom: '1rem' }} id="panel-suggestion-btn">Panel Suggestion</Button>
                     </Grid>
                 </Grid>
             </div>
